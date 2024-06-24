@@ -23,9 +23,6 @@ def calculate_date_difference(date1_str, date2_str):
 file_path = 'dates.txt' 
 date_pairs = read_date_pairs_from_file(file_path)
 
-if not date_pairs:
-    print("The input file should contain at least one pair of dates.")
-else:
     for date1, date2 in date_pairs:
         difference = calculate_date_difference(date1, date2)
         print(f" {difference} ")
